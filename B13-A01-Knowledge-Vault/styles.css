@@ -14,8 +14,12 @@ body {
   font-optical-sizing: auto;
 }
 
-.color-orange{
-    color: #FD6E0A;
+.color-green {
+    color: #30B868;
+}
+
+.color-white {
+    color: #FFFFFF;
 }
 
 .btn{
@@ -64,13 +68,13 @@ body {
 }
 
 
-header {
+/* header {
     background-color: #FFFFFF;
     background: url(../images/developer.png),url(../images/header_bg.png) , #FFFFFF;
     background-repeat: no-repeat;
     background-position: top left , bottom right;
     padding-top: 50px;
-}
+} */
 
 nav {
     /* background-color: #FFF8F3; */
@@ -107,22 +111,140 @@ nav .nav-bar .btn-align {
     
 }
 
-
-
-#banner .banner-content{
-    /* border: 1px solid red; */
-    /* margin: 46px 38px 0px 230px; */
-    width: 96%;
-    margin: 0px auto;
-    justify-content: space-between;
-    display:flex ;
-    align-items: center;
-    background-position: center;
-    max-width: 1600px;
-    
+#banner {
+  max-width: 1600px;
+  background-color: #ffffff;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-#banner .banner-image img{
+#banner .banner-container {
+  max-width: 1600px;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+#banner .banner-content {
+  max-width: 1360px;
+  margin: 115.5px 120px 179.5px 120px ; 
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 134px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+#banner .banner-content .badge {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#banner .banner-content .headline {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+#banner .banner-content .description {
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 32px;
+  color: #FFFFFF;
+}
+
+#banner .banner-image {
+  position: absolute;
+  inset: 0;
+  background:
+  linear-gradient(
+      180deg,
+      rgba(6, 20, 35, 0.35),
+      rgba(6, 20, 35, 0.25)
+    ),
+  url("./assets/hero-bg.png") center / cover no-repeat;
+  z-index: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #38a169;
+  color: white;
+  border: none;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #333;
+}
+
+
+
+/* #banner {
+    width: 96%;
+    max-width: 1600px;
+    background-color: #FFFFFF;    
+}
+
+#banner .banner-container {
+   
+    max-width: 1600px;
+    padding-top: 70px;
+    padding-bottom: 134px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+#banner .banner-content {
+    width: 85%;
+    max-width: 1360px;
+    margin: 115.5px , 120px , 179.5px , 120px ;    
+}
+
+#banner .banner-content #special {
+   text-align: center;
+}
+
+#banner .banner-content #special h2{
+   text-align: center;
+   margin-left: 565.5px;
+   margin-right: 565.5px;
+}
+
+#banner .banner-content #special h3 {
+    margin: 51px, 295px , 76px , 295px;
+    text-align: center;
+}
+
+#banner .banner-content #special {
+   text-align: center;
+} 
+
+#banner .banner-content .buttons {
+    text-align: center;
+} */
+
+
+/* #banner .banner-image img{
     max-width: 584px;
     vertical-align: middle;
 }
@@ -149,7 +271,7 @@ nav .nav-bar .btn-align {
     line-height: 30px;
     margin-bottom: 30px;
 
-}
+} */
 
 #about ,#skills , #resume  {
     padding-top: 130px;
